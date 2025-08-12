@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Khan Academy Math Font Changer",
+  "version": "1.0",
+  "description": "Changes the font in text annotations on Khan Academy.",
+  "permissions": [],
+  "host_permissions": [
+    "*://*.khanacademy.org/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.khanacademy.org/*"
+      ],
+      "js": ["content_script.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
